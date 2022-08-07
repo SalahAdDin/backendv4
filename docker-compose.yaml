@@ -1,0 +1,60 @@
+version: '3'
+services:
+  strapi:
+    container_name: portfolio_backend
+    image: naskio/strapi:latest-alpine
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_HOST: postgres
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_SSL: ${DATABASE_SSL}
+      # JWT_SECRET: ${JWT_SECRET}
+      # ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      # NODE_ENV: ${NODE_ENV}
+    volumes:
+      - ./backend:/srv/app
+    networks:
+      - backend
+    ports:
+      - '1337:1337'
+    depends_on:
+      - postgres
+
+  postgres:
+    container_name: portfolio_database
+    image: postgres:13.7-alpine3.16
+    # platform: linux/amd64 # for platform error on Apple M1 chips
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  database_access:
+    container_name: portfolio_database_access
+    restart: always
+    image: sosedoff/pgweb
+    ports:
+      - "8087:8081"
+    networks:
+      - backend
+    links:
+      - postgres:postgres
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      VIRTUAL_HOST: strapi.db.localhost
+      VIRTUAL_PORT: 8087
+    depends_on:
+      - postgres
+
+networks:
+  backend:
