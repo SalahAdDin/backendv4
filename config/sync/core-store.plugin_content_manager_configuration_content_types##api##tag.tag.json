@@ -1,0 +1,161 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::tag.tag",
+  "value": {
+    "uid": "api::tag.tag",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 20,
+      "mainField": "label",
+      "defaultSortBy": "label",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "label": {
+        "edit": {
+          "label": "Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Label",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "Slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Slug",
+          "searchable": true,
+          "sortable": false
+        }
+      },
+      "pages": {
+        "edit": {
+          "label": "Pages",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "Pages",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "projects": {
+        "edit": {
+          "label": "Projects",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "Projects",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "seo": {
+        "edit": {
+          "label": "SEO",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "Created At",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "Updated At",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "label",
+            "size": 6
+          },
+          {
+            "name": "slug",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "pages",
+        "projects"
+      ],
+      "list": [
+        "id",
+        "label",
+        "slug",
+        "createdAt",
+        "updatedAt",
+        "pages",
+        "projects"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

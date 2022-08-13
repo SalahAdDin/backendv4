@@ -1,0 +1,116 @@
+{
+  "key": "plugin_content_manager_configuration_components::fields.address",
+  "value": {
+    "uid": "fields.address",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "address",
+      "defaultSortBy": "city",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "country": {
+        "edit": {
+          "label": "Country",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "country",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "city": {
+        "edit": {
+          "label": "City",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "city",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "postalCode": {
+        "edit": {
+          "label": "Postal Code",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "postalCode",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "address": {
+        "edit": {
+          "label": "Address",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "address",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "country",
+        "city",
+        "postalCode"
+      ],
+      "edit": [
+        [
+          {
+            "name": "country",
+            "size": 4
+          },
+          {
+            "name": "city",
+            "size": 4
+          },
+          {
+            "name": "postalCode",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "address",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

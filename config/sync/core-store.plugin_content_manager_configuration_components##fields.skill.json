@@ -1,0 +1,96 @@
+{
+  "key": "plugin_content_manager_configuration_components::fields.skill",
+  "value": {
+    "uid": "fields.skill",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "type": {
+        "edit": {
+          "label": "Type",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "type",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "level": {
+        "edit": {
+          "label": "Level",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "level",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "type",
+        "level",
+        "name"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 4
+          },
+          {
+            "name": "type",
+            "size": 4
+          },
+          {
+            "name": "level",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
