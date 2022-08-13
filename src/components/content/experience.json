@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_content_experiences",
+  "info": {
+    "displayName": "Experience",
+    "icon": "briefcase",
+    "description": "Experience(education/work)'s information card."
+  },
+  "options": {},
+  "attributes": {
+    "from": {
+      "type": "date",
+      "default": "2020-02-10",
+      "required": true
+    },
+    "to": {
+      "type": "date",
+      "default": "2022-02-10"
+    },
+    "ongoing": {
+      "type": "boolean",
+      "default": false
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "institution": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fields.address",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 50
+    }
+  }
+}

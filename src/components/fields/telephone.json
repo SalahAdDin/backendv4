@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_fields_telephones",
+  "info": {
+    "displayName": "Telephone",
+    "icon": "phone-alt",
+    "description": "Phone's information card."
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": ["Mobile", "Home", "Work"],
+      "required": true,
+      "default": "Mobile"
+    },
+    "number": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    }
+  }
+}

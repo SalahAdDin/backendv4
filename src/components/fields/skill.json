@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_fields_skills",
+  "info": {
+    "displayName": "Skill",
+    "icon": "brain",
+    "description": "Skill's information card."
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Database",
+        "Framework",
+        "Language",
+        "Operating_System",
+        "Programming_Language",
+        "Technical",
+        "Technology",
+        "Tools"
+      ],
+      "required": true,
+      "default": "Language"
+    },
+    "level": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 1,
+      "default": 3
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "unique": true
+    }
+  }
+}

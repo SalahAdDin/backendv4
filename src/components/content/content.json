@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_contents",
+  "info": {
+    "displayName": "Content",
+    "icon": "file-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 250
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_content_personal_informations",
+  "info": {
+    "displayName": "Personal Information",
+    "icon": "address-card",
+    "description": "Personal information's card."
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "photo": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "minLength": 10
+    },
+    "nationality": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fields.address"
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fields.telephone"
+    },
+    "mail": {
+      "type": "email",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fields.url"
+    },
+    "aboutMe": {
+      "type": "richtext",
+      "minLength": 50
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_fields_urls",
+  "info": {
+    "displayName": "URL",
+    "icon": "link",
+    "description": "Link's card."
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Home",
+        "Github",
+        "BitBucket",
+        "GitLab",
+        "StackOverflow",
+        "LinkedIn"
+      ],
+      "default": "Home",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
