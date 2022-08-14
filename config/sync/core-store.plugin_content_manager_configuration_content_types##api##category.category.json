@@ -72,7 +72,7 @@
           "mainField": "title"
         },
         "list": {
-          "label": "projects",
+          "label": "Projects",
           "searchable": false,
           "sortable": false
         }
@@ -153,7 +153,8 @@
         "name",
         "slug",
         "createdAt",
-        "updatedAt"
+        "updatedAt",
+        "projects"
       ]
     }
   },
