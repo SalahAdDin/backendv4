@@ -11221,10 +11221,10 @@ std-env@^3.0.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.1.1.tgz#1f19c4d3f6278c52efd08a94574a2a8d32b7d092"
   integrity sha512-/c645XdExBypL01TpFKiG/3RAa/Qmu+zRi0MwAmrdEkwHNuN0ebo8ccAXBBDa5Z0QOJgBskUIbuCK91x0sCVEw==
 
-strapi-plugin-config-sync@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-config-sync/-/strapi-plugin-config-sync-1.0.2.tgz#bf7470fca146ae529ac51edceb601f56e099eda0"
-  integrity sha512-w2UP4NXLFIhK9Q7lYfK98QH04QXN7FYUf0BpJ2+XcEj93BcUGvuu89k2cv6YmvA1hqsMwYxVQG8Lewz2NbeOrA==
+strapi-plugin-config-sync@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-config-sync/-/strapi-plugin-config-sync-1.0.3.tgz#f46608281be4b8bca7cf3f76a05be1564c667741"
+  integrity sha512-tBTHQDHseoeJhHkK1n35qAgaiPlQ/WrIaHMClBSZRCwQtD9yElRqU6NVRroTHkEOPdUOLPmJyZC/G78ZC4L3Gg==
   dependencies:
     chalk "^4.1.2"
     cli-table "^0.3.6"
@@ -11259,10 +11259,10 @@ strapi-plugin-entity-relationship-chart@^4.1.0:
     dagre "^0.8.5"
     lodash "^4.17.21"
 
-strapi-plugin-import-export-entries@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-import-export-entries/-/strapi-plugin-import-export-entries-1.9.0.tgz#892fc22ad480c709d7c8271e8e3b3bab1771cbcc"
-  integrity sha512-mqRbNKa3oQgdO3Q30tZxHoRU3E2mafOwneMEdZ4lH7WcG6con8Qz9gKt00y6+9v+Gvrhw1rBM4tZ8E8nOzCGIA==
+strapi-plugin-import-export-entries@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-import-export-entries/-/strapi-plugin-import-export-entries-1.12.0.tgz#5b0b39d5eab07ab63b6908c5e2cd28a0e0353cb0"
+  integrity sha512-OkvjPvtMq+IuWcMtLynq7M8qGTTpj5ggw8sPsS5AO+2Rz6B1+pbhpqOw/w85zcGCBMvP6nR0lJEisu3Hev/BTA==
   dependencies:
     "@monaco-editor/react" "4.4.5"
     csvtojson "2.0.10"
@@ -11280,10 +11280,10 @@ strapi-plugin-migrations@^1.0.4:
     "@strapi/helper-plugin" "^4.1.1"
     "@strapi/utils" "^4.1.1"
 
-strapi-plugin-preview-button@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-preview-button/-/strapi-plugin-preview-button-0.3.5.tgz#972639c3f21b974a0b59376507a29eccfe044d89"
-  integrity sha512-cmos/u5S1o3hjV84ErzXrz8/G7AUUPEo54J0tJTTpGCgR9RSM/i69EeMV0cx17NEgiKrCPMDGE6U+ReKlX0vCQ==
+strapi-plugin-preview-button@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-preview-button/-/strapi-plugin-preview-button-0.3.6.tgz#272b56462249deffa3ae0239b1d3eace82b6e0c9"
+  integrity sha512-wyAZ792XUcMHX4Ze/rS/A8gMhh4YwLXmkqR8nM3FRbJRiFXQZLn00S+CrI9gZs04njv1Lz7ZcLtSJ2h5AEDWgQ==
   dependencies:
     immer "^9.0.12"
     prop-types "^15.8.1"
