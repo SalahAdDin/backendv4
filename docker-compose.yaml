@@ -2,7 +2,7 @@ version: '3'
 services:
   strapi:
     container_name: portfolio_backend
-    image: naskio/strapi:4.3.4-alpine
+    image: naskio/strapi:4.4.3-alpine
     restart: unless-stopped
     env_file: .env
     environment:
