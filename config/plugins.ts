@@ -4,9 +4,9 @@ export default ({ env }) => ({
     config: {
       syncDir: "config/sync/",
       minify: false,
-      importOnBootstrap: false,
+      importOnBootstrap: true,
       customTypes: [],
-      excludedTypes: [],
+      excludedTypes: ["admin-role"],
       // excludedConfig: ["core-store.plugin_users-permissions_grant"],
     },
   },
@@ -76,7 +76,7 @@ export default ({ env }) => ({
     enabled: true,
     config: {
       // By default all contentTypes and components are included.
-      // To exlclude strapi's internal models, use:
+      // To exclude Strapi's internal models, use:
       exclude: [
         "strapi::core-store",
         "webhook",
@@ -105,29 +105,6 @@ export default ({ env }) => ({
   },
   "import-export-entries": {
     enabled: true,
-  },
-  "preview-button": {
-    /* config: {
-      contentTypes: [
-        {
-          uid: "api::page.page",
-          targetField: "slug",
-        },
-        {
-          uid: "api::post.post",
-          draft: {
-            query: {
-              type: "post",
-            },
-            targetField: "id",
-          },
-          published: {
-            basePath: "blog",
-            targetField: "slug",
-          },
-        },
-      ],
-    }, */
   },
   migrations: {
     enabled: true,

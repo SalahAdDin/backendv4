@@ -14,7 +14,6 @@ export default [
             "'self'",
             "data:",
             "blob:",
-            // TODO: add cloudinary here
             "cdn.jsdelivr.net",
             "strapi.io",
             "dl.airtable.com",
