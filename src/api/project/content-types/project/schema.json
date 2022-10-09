@@ -78,6 +78,12 @@
       },
       "component": "shared.seo",
       "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "projects"
     }
   }
 }

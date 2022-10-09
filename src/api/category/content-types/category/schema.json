@@ -43,14 +43,9 @@
           "localized": true
         }
       },
-      "type": "richtext",
-      "required": true,
-      "minLength": 50
-    },
-    "projects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::project.project"
+      "type": "text",
+      "minLength": 50,
+      "required": true
     },
     "seo": {
       "type": "component",
@@ -62,6 +57,12 @@
       },
       "component": "shared.seo",
       "required": true
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "category"
     }
   }
 }

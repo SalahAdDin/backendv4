@@ -78,20 +78,6 @@
           "sortable": false
         }
       },
-      "seo": {
-        "edit": {
-          "label": "SEO",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "seo",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -122,6 +108,15 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "label",
+        "slug",
+        "createdAt",
+        "updatedAt",
+        "pages",
+        "projects"
+      ],
       "edit": [
         [
           {
@@ -132,24 +127,9 @@
             "name": "slug",
             "size": 6
           }
-        ],
-        [
-          {
-            "name": "seo",
-            "size": 12
-          }
         ]
       ],
       "editRelations": [
-        "pages",
-        "projects"
-      ],
-      "list": [
-        "id",
-        "label",
-        "slug",
-        "createdAt",
-        "updatedAt",
         "pages",
         "projects"
       ]

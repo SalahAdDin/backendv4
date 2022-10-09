@@ -57,7 +57,7 @@
           "editable": true
         },
         "list": {
-          "label": "Link",
+          "label": "Links",
           "searchable": false,
           "sortable": false
         }
@@ -103,6 +103,21 @@
           "label": "seo",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "category": {
+        "edit": {
+          "label": "Category",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "Category",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -166,12 +181,14 @@
         ]
       ],
       "editRelations": [
+        "category",
         "tags"
       ],
       "list": [
         "id",
         "title",
         "hero",
+        "category",
         "link",
         "createdAt",
         "updatedAt",

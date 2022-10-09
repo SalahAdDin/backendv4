@@ -62,21 +62,6 @@
           "sortable": false
         }
       },
-      "projects": {
-        "edit": {
-          "label": "Projects",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "title"
-        },
-        "list": {
-          "label": "Projects",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "seo": {
         "edit": {
           "label": "SEO",
@@ -87,6 +72,21 @@
         },
         "list": {
           "label": "seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "projects": {
+        "edit": {
+          "label": "projects",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "projects",
           "searchable": false,
           "sortable": false
         }
@@ -121,6 +121,13 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "slug",
+        "createdAt",
+        "updatedAt"
+      ],
       "edit": [
         [
           {
@@ -146,14 +153,6 @@
         ]
       ],
       "editRelations": [
-        "projects"
-      ],
-      "list": [
-        "id",
-        "name",
-        "slug",
-        "createdAt",
-        "updatedAt",
         "projects"
       ]
     }
