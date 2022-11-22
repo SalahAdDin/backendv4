@@ -78,7 +78,7 @@
       },
       "projects": {
         "edit": {
-          "label": "projects",
+          "label": "Projects",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -86,7 +86,7 @@
           "mainField": "title"
         },
         "list": {
-          "label": "projects",
+          "label": "Projects",
           "searchable": false,
           "sortable": false
         }
@@ -121,13 +121,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "name",
-        "slug",
-        "createdAt",
-        "updatedAt"
-      ],
       "edit": [
         [
           {
@@ -153,6 +146,14 @@
         ]
       ],
       "editRelations": [
+        "projects"
+      ],
+      "list": [
+        "id",
+        "name",
+        "slug",
+        "createdAt",
+        "updatedAt",
         "projects"
       ]
     }
