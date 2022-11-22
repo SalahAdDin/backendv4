@@ -113,6 +113,39 @@ export default ({ env }) => ({
       migrationFolderPath: "migrations",
     },
   },
+  "preview-button": {
+    config: {
+      contentTypes: [
+        {
+          uid: "api::page.page",
+          draft: {
+            url: "http://localhost:3000/api/preview",
+            query: {
+              type: "page",
+              locale: "{locale}",
+              slug: "{slug}",
+            },
+          },
+          published: {
+            url: "http://localhost:3000/{locale}/{slug}",
+          },
+        },
+        {
+          uid: "api::post.post",
+          draft: {
+            url: "http://localhost:3000/api/preview",
+            query: {
+              type: "post",
+              slug: "{slug}",
+            },
+          },
+          published: {
+            url: "http://localhost:3000/blog/{slug}",
+          },
+        },
+      ],
+    },
+  },
   seo: {
     enabled: true,
   },

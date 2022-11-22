@@ -1,3 +1,5 @@
+// import path from "path";
+
 export default ({ env }) => ({
   connection: {
     client: "postgres",
@@ -10,4 +12,16 @@ export default ({ env }) => ({
       ssl: env.bool("DATABASE_SSL", false),
     },
   },
+  /*   connection: {
+    client: "sqlite",
+    connection: {
+      filename: path.join(
+        __dirname,
+        "..",
+        "..",
+        env("DATABASE_FILENAME", path.join(".tmp", "data.db"))
+      ),
+    },
+    useNullAsDefault: true,
+  }, */
 });
