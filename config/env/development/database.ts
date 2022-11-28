@@ -1,7 +1,7 @@
-// import path from "path";
+import path from "path";
 
 export default ({ env }) => ({
-  connection: {
+  /* connection: {
     client: "postgres",
     connection: {
       host: env("DATABASE_HOST", "127.0.0.1"),
@@ -11,8 +11,8 @@ export default ({ env }) => ({
       password: env("DATABASE_PASSWORD", "strapi"),
       ssl: env.bool("DATABASE_SSL", false),
     },
-  },
-  /*   connection: {
+  }, */
+  connection: {
     client: "sqlite",
     connection: {
       filename: path.join(
@@ -23,5 +23,5 @@ export default ({ env }) => ({
       ),
     },
     useNullAsDefault: true,
-  }, */
+  },
 });

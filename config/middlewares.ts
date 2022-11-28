@@ -8,14 +8,10 @@ export default [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "script-src": ["'self'", "editor.unlayer.com"],
-          "frame-src": ["'self'", "editor.unlayer.com"],
           "img-src": [
             "'self'",
             "data:",
             "blob:",
-            "cdn.jsdelivr.net",
-            "strapi.io",
             "dl.airtable.com",
             "res.cloudinary.com",
           ],
