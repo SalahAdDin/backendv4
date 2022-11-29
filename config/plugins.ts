@@ -21,7 +21,6 @@ export default ({ env }) => ({
           draft: {
             url: "http://localhost:3000/api/preview",
             query: {
-              type: "page",
               locale: "{locale}",
               slug: "{slug}",
             },
@@ -77,7 +76,7 @@ export default ({ env }) => ({
       },
       actionOptions: {
         upload: {},
-        uploadStream: {},
+        uploadStream: { folder: env("CLOUDINARY_FOLDER") },
         delete: {},
       },
     },
@@ -94,14 +93,14 @@ export default ({ env }) => ({
               id: `${record.id}_${record.title}`,
             }),
             model: "page",
-            types: ["delete","publish", "update"],
+            types: ["delete", "publish", "update"],
           },
           {
             params: (record) => ({
               id: `${record.id}_${record.title}`,
             }),
             model: "project",
-            types: ["create", "delete","update"],
+            types: ["create", "delete", "update"],
           },
         ],
       },
