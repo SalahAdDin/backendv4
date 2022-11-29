@@ -127,11 +127,17 @@
             "name": "slug",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "pages",
+            "size": 6
+          },
+          {
+            "name": "projects",
+            "size": 6
+          }
         ]
-      ],
-      "editRelations": [
-        "pages",
-        "projects"
       ]
     }
   },

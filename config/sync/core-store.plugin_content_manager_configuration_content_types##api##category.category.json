@@ -140,13 +140,16 @@
         ],
         [
           {
+            "name": "projects",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "seo",
             "size": 12
           }
         ]
-      ],
-      "editRelations": [
-        "projects"
       ],
       "list": [
         "id",

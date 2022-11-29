@@ -169,6 +169,16 @@
         ],
         [
           {
+            "name": "category",
+            "size": 6
+          },
+          {
+            "name": "tags",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "body",
             "size": 12
           }
@@ -179,10 +189,6 @@
             "size": 12
           }
         ]
-      ],
-      "editRelations": [
-        "category",
-        "tags"
       ],
       "list": [
         "id",

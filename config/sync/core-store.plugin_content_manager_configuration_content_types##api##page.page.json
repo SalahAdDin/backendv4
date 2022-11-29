@@ -150,6 +150,10 @@
           {
             "name": "hero",
             "size": 6
+          },
+          {
+            "name": "tags",
+            "size": 6
           }
         ],
         [
@@ -164,9 +168,6 @@
             "size": 12
           }
         ]
-      ],
-      "editRelations": [
-        "tags"
       ],
       "list": [
         "id",
